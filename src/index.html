@@ -1,10 +1,22 @@
+<!-- import './styles.css' -->
+
 <!DOCTYPE html>
 <html>
   <head>
-    <script type="text/javascript" src="bundle.js"></script>
     <title>rpg-adventure</title>
   </head>
   <body>
-    <p>rpg-adventure</p>
+
+    <!-- <h3>Goblin Health<span id="goblin-health"></span></h3> -->
+    <h3>Your Health<span id="character-health"></span></h3>
+    <h3>Your Strength<span id="character-str"></span></h3>
+
+    <p>Are you strong enough????? YOU NEED AT LEAST STRENGTH OF 16 TO WIN A FIGHT<p>
+
+<div id="encounterOne">
+    <button id="fight-button">FIGHT</button>
+    <button id="talk-button" onclick="talk()">TALK</button>
+    <button id="escape-button" onclick="escape()">ESCAPE</button>
+</div>
   </body>
 </html>
