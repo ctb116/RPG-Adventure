@@ -7,24 +7,30 @@
   </head>
   <body>
  <div class="container">
-    <!-- <h3>Goblin Health<span id="goblin-health"></span></h3> -->
-    <h3>Your Health<span id="character-health"></span></h3>
-    <h3>Your Strength<span id="character-str"></span></h3>
-
-    <p>Are you strong enough????? YOU NEED AT LEAST STRENGTH OF 16 TO WIN A FIGHT<p>
-
-<div id="encounterOne">
-    <button id="fight-button">FIGHT</button>
-    <button id="talk-button" onclick="talk()">TALK</button>
-    <button id="escape-button" onclick="escape()">ESCAPE</button>
 
 
-
-
+<div id="selectChoice">
+  <p>You decide to go to adventure guide and become and adventurer! What class do you choose?<p>
     <button class="choice" id="fighter">FIGHTER TEST</button>
     <button class="choice" id="caster">CASTER TEST</button>
     <button class="choice" id="rogue">ROGUE TEST</button>
 </div>
+
+<div id="graduate">
+  <p>Congrats you made it through adventure education on <span id="date"></span> </p>
+<button id="grad">Ok thanks</button>
+</div>
+
+
+<div id="encounterOne">
+  <h3>Your Health<span id="character-health"></span></h3>
+  <h3>Your Strength<span id="character-str"></span></h3>
+    <button id="fight-button">FIGHT</button>
+    <button id="talk-button" onclick="talk()">TALK</button>
+    <button id="escape-button" onclick="escape()">ESCAPE</button>
+</div>
+
+
 </div>
   </body>
 </html>

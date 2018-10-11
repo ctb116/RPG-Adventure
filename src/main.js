@@ -2,7 +2,7 @@ import $ from 'jquery';
 import 'bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './styles.css';
-import { Character, fighter, caster, rogue } from './rpg.js';
+import { Character, fighter, caster, rogue, today } from './rpg.js';
 // import { fighter } from './rpg.js';
 
 
@@ -30,17 +30,24 @@ $(document).ready(function() {
   // });
 
 
-$(".choice").click(function() {
-  if (this.id === 'fighter') {
-    var role = fighter;
-    console.log(role);
-  } else if (this.id === 'caster') {
-    var role = caster;
-    console.log(role);
-  } else if (this.id === 'rogue') {
-    var role = rogue
-    console.log(rogue);
-  }
+document.getElementById("date").innerHTML = today;
+
+
+  $(".choice").click(function() {
+    if (this.id === 'fighter') {
+      var role = fighter;
+      console.log(role);
+    } else if (this.id === 'caster') {
+      var role = caster;
+      console.log(role);
+    } else if (this.id === 'rogue') {
+      var role = rogue
+      console.log(rogue);
+    }
+
+    $("#selectChoice").hide();
+    $("#graduate").show();
+
 
     $("#fight-button").click(function(){
       if(role.attributes[0] >= 16) {
@@ -49,8 +56,9 @@ $(".choice").click(function() {
         alert("you are are weak you lose");
       }
     });
+
+
+
+
   });
-
-
-
 });
