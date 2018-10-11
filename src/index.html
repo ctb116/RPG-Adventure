@@ -23,11 +23,41 @@
 
 
 <div id="encounterOne">
-  <h3>Your Health<span id="character-health"></span></h3>
-  <h3>Your Strength<span id="character-str"></span></h3>
-    <button id="fight-button">FIGHT</button>
-    <button id="talk-button" onclick="talk()">TALK</button>
-    <button id="escape-button" onclick="escape()">ESCAPE</button>
+  <p id="message">After you leave you're attacked by a goblin. That was fast. What do you do?</p>
+
+
+    <button class="encounter" id="fight">FIGHT</button>
+    <button class="encounter" id="talk">TALK</button>
+    <button class="encounter" id="escape">ESCAPE</button> <br>
+
+    <h3 id="gameMessage3">YOU won, goblin dead, you got loot: <span id="loot"></span></h3>
+
+    <div id="fightScene">
+      <p>Goblin's Health<span id="goblin-health"></span></p>
+      <br>
+      <h3 id="gameMessage1">It's your turn</h3>
+      <h3 id="gameMessage2">The goblin is about to attack</h3>
+      <br>
+      <button class="attack" id="fightMain">Main Attack</button>
+      <button class="attack" id="fightSpecial">Special</button>
+      <button class="attack" id="fightTalk">Talk</button>
+      <button class="attack" id="fightEscape">Try to Escape</button>
+    </div>
+
+    <div id="talkScene">
+      <h3>You want to talk it out</h3>
+    </div>
+
+    <div id="escapeScene">
+    </div>
+
+    <p>Your Health<span id="character-health"></span></p>
+    <p>Your Strength<span id="character-str"></span></p>
+    <p>Your Dexterity<span id="character-dex"></span></p>
+    <p>Your Agility<span id="character-agi"></span></p>
+    <p>Your Charisma<span id="character-chr"></span></p>
+    <p>Your Wisdom<span id="character-wis"></span></p>
+    <p>Your AC (Armor Class)<span id="character-ac"></span></p>
 </div>
 
 

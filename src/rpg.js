@@ -8,8 +8,6 @@ export function Character(name, role, level, attributes, stats, inventory) {
 }
 
 
-// attributes = [Str, Dex, Agi, Chr, Wis, AC] attributes constant
-// stats = [HP, AP] stats deplete
 
 
 // var dayName = days[date.getDay()];
@@ -23,13 +21,15 @@ export var today = (dayNames[date.getDay()] + ", " + date.getUTCDate() + "th of 
 
 
 
-
+// attributes = [Str, Dex, Agi, Chr, Wis, AC] attributes constant
+// stats = [HP, AP] stats deplete
 export var fighter = new Character ("Duff", "Fighter", 1, [16, 10, 12, 17, 5, 17], [20, 2], ["sword", "heal potion"]);
 
 export var caster = new Character ("Balthazar", "Spellcaster", 1, [5, 6, 6, 10, 16, 12], [10, 2], ["potion", "fat book"]);
 
 export var rogue = new Character ("Tarence", "Rogue", 1, [5, 16, 13, 14, 10, 14], [14, 2], ["lockpick", "poison"]);
 
+export var goblin = new Character ("Goblin Man", "Monster", 1, [5, 16, 13, 14, 10, 14], [14, 2], ["chicken leg", "coin"])
 
 Character.prototype.characterFighter = function () {
   return this.name;
