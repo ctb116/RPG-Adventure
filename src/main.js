@@ -5,23 +5,52 @@ import './styles.css';
 import { Character, fighter, caster, rogue } from './rpg.js';
 // import { fighter } from './rpg.js';
 
-console.log(fighter);
 
 $(document).ready(function() {
-  console.log(fighter.stats[0]);
-  console.log(caster.name);
-  console.log(rogue.name);
 
   $("#character-health").text(" " + fighter.stats[0]);
   $("#character-str").text(" " + fighter.attributes[0]);
 
-  $("#fight-button").click(function(){
-    if(fighter.attributes[0] >= 16) {
-      alert("YOU STRONG YOU WIN!!!!!");
-    } else {
-      alert("you are are weak you lose");
-    }
-  })
+  // var role;
+  // console.log(role);
+
+  //
+  // $("#fighter").click(function() {
+  // var role = this.id
+  // });
+  //
+  // $("#caster").click(function() {
+  // var role = this.id
+  // });
+
+  // $("#fighter").click(function() {
+  // role = this.id;
+  // console.log(role);
+  // return role;
+  // });
+
+
+$(".choice").click(function() {
+  if (this.id === 'fighter') {
+    var role = fighter;
+    console.log(role);
+  } else if (this.id === 'caster') {
+    var role = caster;
+    console.log(role);
+  } else if (this.id === 'rogue') {
+    var role = rogue
+    console.log(rogue);
+  }
+
+    $("#fight-button").click(function(){
+      if(role.attributes[0] >= 16) {
+        alert("YOU STRONG YOU WIN!!!!!");
+      } else {
+        alert("you are are weak you lose");
+      }
+    });
+  });
+
 
 
 });
